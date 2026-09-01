@@ -7,7 +7,7 @@ comments: true
 
 ## As a conversation Starter
 
-Here are some places I have lived.
+Hello. My name is Tristan, and here are some places I have lived or traveled to. 
 
 <comment>
 Flags are made using Wikipedia images
@@ -60,10 +60,24 @@ Flags are made using Wikipedia images
     // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
     var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
     var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 9 years"},
-        {"flag": "b/be/Flag_of_England.svg", "greeting": "Alright mate", "description": "England - 2 years"},
-        {"flag": "e/ef/Flag_of_Hawaii.svg", "greeting": "Aloha", "description": "Hawaii - 2 years"},
+        {"flag": "0/01/Flag_of_California.svg", 
+        "greeting": "California", 
+        "description": "My Birthplace"},
+        {
+        "flag": "9/9e/Flag_of_Japan.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "greeting": "Been Here 2 Times Once in 2024 and Once in 2025",
+        "description": "Travel Location"
+        },
+        {
+        "flag": "9/9d/Flag_of_Arizona.svg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+        "greeting": "Arizona (Phoenix) - My Aunt Lives Here, Periodic Thanksgiving Visits",
+        "description": "Travel Location"
+        },
+        {
+        "flag": "e/ef/Flag_of_Hawaii.svg",
+        "greeting": "Hawaii (Honolulu)- My Grandparents Live Here",
+        "description": "Travel Location"
+        },
     ];
 
     // 3a. Consider how to update style count for size of container
@@ -97,42 +111,62 @@ Flags are made using Wikipedia images
     }
 </script>
 
-### Journey through Life
+## Basic Information About Me
+- Ethnicity: I am Asian American, specifically Chinese-Japanese American
+- Location: I have lived in California for my whole life.
+- Favorite Foods: Pasta, Ramen, Strawberries, Pastries
+- Grade: I am in 12th Grade
+- Age: 17 years old
 
-Here is what I did at those places
+## My Family
+- I have a Mother and a Father, but 0 siblings
+- I have 1 Cat named Snuggles
+- Used to have another cat named Jet and a dog named Zoe, but they passed away unfortunately
 
-- 🏫 Lots of Elementary Schools in Tucson, LA, Honolulu, and Glendale (CA)
-- 🏫 Middle and High School in Glendale (CA), Hoover High graduated '77
-- 🎓 Glendale CA Community College, UCLA Extension, LA Wilshire Computer Tech School '77 to '79
-- ⛪ England, London Missionary for Church of Jesus Christ of Latter-day Saints '79 to '81
-- 💼 Culver City, Glendale CA founder at Ashton-Tate, original PC's dBase 2 and 3 '82 to '87
-- 🎓 Eugene Oregon Undergraduate CompSci Degree at University of Oregon (Go Ducks!) '89 to '91
-- 💼 Eugene Oregon, founder and owner @ Microniche `88, Point Control CAD CAM developer '91 to '96
-- 🏢 San Diego CA Qualcomm, Satellite Comm and 1st Mobile OS (BREW) '96 to '19
-- 👨‍🏫 San Diego CA Teacher of Computer Science @ Del Norte High School San Diego '19 to present
-
-### Culture, Family, and Fun
-
-Everything for me, as for many others, revolves around family and faith.
-
-- My mother told me that I was Danish, English. and Irish, here is my researched [family tree]({{site.baseurl}}/images/about/familytree.png)
-- My family is pretty big as I have been married twice, my 1st wife passed away.  We have had 5 kids, 4 adopted by me, 1 biological.  Plus, there are three grandkids.  My name to my grandkids is Abuilito.
-- The gallery of pics has some of my family, fun, culture and faith memories.
-
-<comment>
-Gallery of Pics, scroll to the right for more ...
-</comment>
-<div class="image-gallery">
-  <img src="{{site.baseurl}}/images/about/missionary.jpg" alt="Image 1">
-  <img src="{{site.baseurl}}/images/about/john_tamara.jpg" alt="Image 2">
-  <img src="{{site.baseurl}}/images/about/tamara_fam.jpg" alt="Image 3">
-  <img src="{{site.baseurl}}/images/about/surf.jpg" alt="Image 4">
-  <img src="{{site.baseurl}}/images/about/john_lora.jpg" alt="Image 5">
-  <img src="{{site.baseurl}}/images/about/lora_fam.jpg" alt="Image 6">
-  <img src="{{site.baseurl}}/images/about/lora_fam2.jpg" alt="Image 7">
-  <img src="{{site.baseurl}}/images/about/pj_party.jpg" alt="Image 8">
-  <img src="{{site.baseurl}}/images/about/trent_family.png" alt="Image 9">
-  <img src="{{site.baseurl}}/images/about/claire.jpg" alt="Image 10">
-  <img src="{{site.baseurl}}/images/about/grandkids.jpg" alt="Image 11">
-  <img src="{{site.baseurl}}/images/about/farm.jpg" alt="Image 12">
+<div class="image-fam">
+  <img src="{{site.baseurl}}/images/about/image.png" alt="Snuggles The Cat">
 </div>
+
+<style>
+.image-fam {
+  display: flex;
+  text-align: center;
+}
+
+.image-fam img {
+  height: 300px ;
+  width: 300px ;
+  /*max-width: 300px;*/
+  border-radius: 10px ;
+}
+</style>
+
+## Hobbies and Interests
+- I like to play video games, draw, play the piano, and listen to music
+- Some video games I've played are Hollow Knight (and Silksong), Don't Starve Together, Terraria, Slime Rancher, Undertale, and OMORI just to name a few.
+- My taste in music includes Jpop, instrumentals, music from video games, and an assortment of other random pieces. 
+
+<div class="image-gallery">
+  <img src="{{site.baseurl}}/images/about/HK_header.png" alt="Hollow Knight">
+  <img src="{{site.baseurl}}/images/about/terraria_tree.png" alt="Terraria Tree">
+  <img src="{{site.baseurl}}/images/about/slimerancher_slimes.jpg" alt="Slime Rancher slimes">
+  <img src="{{site.baseurl}}/images/about/omor_whitespace.png" alt="OMORI White Space">
+  <img src="{{site.baseurl}}/images/about/bird.png" alt="Bird Drawing">
+  <img src="{{site.baseurl}}/images/about/undertale_souls.jpg" alt="Undertale Souls">
+  <img src="{{site.baseurl}}/images/about/Apple-Cinnamon-Pastries.jpg" alt="Cinnamon Pastries">
+</div>
+
+<style>
+.image-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.image-gallery img {
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+</style>
