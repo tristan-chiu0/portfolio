@@ -5,33 +5,107 @@ permalink: /about/
 comments: true
 ---
 
-## As a conversation Starter
+<h4 class="page-kicker"> AP CSP - 2026-2027</h4>
 
 Hello. My name is Tristan, and here are some places I have lived or traveled to. 
 
-<comment>
-Flags are made using Wikipedia images
-</comment>
+<nav class="toc">
+  <a href="#basics">Basics</a>
+  <a href="#family">Family</a>
+  <a href="#hobbies">Hobbies</a>
+</nav>
+
+<p class="flag-attribution"> Flags are attributed to Wikimedia Commons </p>
 
 <style>
-    /* Style looks pretty compact, 
-       - grid-container and grid-item are referenced the code 
-    */
+    .page-kicker {
+        margin: 0 0 6px;
+        color: #b8860b;
+        font-size: 0.85rem;
+        font-weight: bold;
+        letter-spacing: 0.04em;
+    }
+
+    .toc {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin: 16px 0 24px;
+    }
+
+    .toc a {
+        padding: 8px 14px;
+        background: #181818;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 999px;
+        color: #e29ce8;
+        font-size: 0.85rem;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .toc a:hover {
+        border-color: #e29ce8;
+    }
+
+    .flag-attribution {
+        margin: 0 0 12px;
+        font-size: 0.8rem;
+        color: #999;
+        font-style: italic;
+    }
+
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Dynamic columns */
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
         gap: 10px;
     }
     .grid-item {
         text-align: center;
+        padding: 20px;
+        background: #181818;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
     }
     .grid-item img {
         width: 100%;
-        height: 100px; /* Fixed height for uniformity */
-        object-fit: contain; /* Ensure the image fits within the fixed height */
+        height: 100px;
+        object-fit: contain;
+        margin-bottom: 8px;
+        border-radius: 6px;
     }
     .grid-item p {
-        margin: 5px 0; /* Add some margin for spacing */
+        margin: 4px 0;
+        font-size: 0.9rem;
+        color: #f0f0f0;
+    }
+    .grid-item p:first-of-type {
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .image-fam {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        margin: 16px auto;
+        padding: 16px;
+        background: #181818;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+    }
+    .image-fam img {
+        height: 300px;
+        width: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    .image-fam-caption {
+        margin: 10px 0 0;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #e29ce8;
     }
 
     .image-gallery {
@@ -39,12 +113,37 @@ Flags are made using Wikipedia images
         flex-wrap: nowrap;
         overflow-x: auto;
         gap: 10px;
-        }
-
+    }
     .image-gallery img {
         max-height: 150px;
         object-fit: cover;
         border-radius: 5px;
+    }
+    .cat-box {
+        position: relative;
+        width: 100%;
+        height: 120px;
+        margin: 30px 0;
+        background: #181818;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 14px;
+        overflow: hidden;
+    }
+
+    .cat-walker {
+        position: absolute;
+        bottom: 14px;
+        left: 0;
+        animation: cat-bob 0.3s infinite alternate;
+    }
+    .cat-sprite {
+        display: inline-block;
+        font-size: 2rem;
+        transition: transform 0.15s ease;
+    }
+    @keyframes cat-bob {
+        from { transform: translateY(0); }
+        to { transform: translateY(-4px); }
     }
 </style>
 
@@ -111,37 +210,22 @@ Flags are made using Wikipedia images
     }
 </script>
 
-## Basic Information About Me
+<h2 id="basics">Basic Information About Me</h2>
 - Ethnicity: I am Asian American, specifically Chinese-Japanese American
 - Location: I have lived in California for my whole life.
 - Favorite Foods: Pasta, Ramen, Strawberries, Pastries
-- Grade: I am in 12th Grade
-- Age: 17 years old
 
-## My Family
+<h2 id="family">My Family</h2>
 - I have a Mother and a Father, but 0 siblings
 - I have 1 Cat named Snuggles
 - Used to have another cat named Jet and a dog named Zoe, but they passed away unfortunately
 
 <div class="image-fam">
   <img src="{{site.baseurl}}/images/about/image.png" alt="Snuggles The Cat">
+  <p class="image-fam-caption"> This is my cat! He is around 4-5 years old. </p>
 </div>
 
-<style>
-.image-fam {
-  display: flex;
-  text-align: center;
-}
-
-.image-fam img {
-  height: 300px ;
-  width: 300px ;
-  /*max-width: 300px;*/
-  border-radius: 10px ;
-}
-</style>
-
-## Hobbies and Interests
+<h2 id="hobbies">Hobbies and Interests</h2>
 - I like to play video games, draw, play the piano, and listen to music
 - Some video games I've played are Hollow Knight (and Silksong), Don't Starve Together, Terraria, Slime Rancher, Undertale, and OMORI just to name a few.
 - My taste in music includes Jpop, instrumentals, music from video games, and an assortment of other random pieces. 
@@ -156,17 +240,84 @@ Flags are made using Wikipedia images
   <img src="{{site.baseurl}}/images/about/Apple-Cinnamon-Pastries.jpg" alt="Cinnamon Pastries">
 </div>
 
-<style>
-.image-gallery {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  gap: 10px;
-}
+<div class="cat-box" id="cat-box">
+  <div class="cat-walker" id="cat-walker">
+    <span class="cat-sprite" id="cat-sprite">🐈‍⬛</span>
+  </div>
+</div>
 
-.image-gallery img {
-  max-height: 150px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-</style>
+<script>
+    var box = document.getElementById("cat-box");
+    var walker = document.getElementById("cat-walker");
+    var cat = document.getElementById("cat-sprite");
+    
+    var position = 0;
+    var direction = 1;
+    var speed = 1;
+    
+    var actions = ["walk", "idle", "sleep"];
+    var currentAction = "walk";
+
+    var lookInterval = null;
+
+    var catFacing = 1; // shared, single source of truth for orientation
+
+    function startLooking() {
+        catFacing = catFacing === 1 ? -1 : 1;
+        cat.style.transform = "scaleX(" + catFacing + ")";
+    }
+
+
+
+    function pickNewAction() {
+        currentAction = actions[Math.floor(Math.random() * actions.length)];
+        var nextAction;
+        do {
+            nextAction = actions[Math.floor(Math.random() * actions.length)];
+        } while (nextAction === currentAction);
+
+        currentAction = nextAction;
+        // actions for the cat
+        if (currentAction === "sleep") {
+            cat.textContent = "🍞";
+            walker.style.animationPlayState = "paused";
+        } else if (currentAction === "idle") {
+            cat.textContent = "🐈‍⬛";
+            walker.style.animationPlayState = "paused";
+            startLooking();
+        } else {
+            cat.textContent = "🐈‍⬛";
+            walker.style.animationPlayState = "running";
+            catFacing = direction === -1 ? 1 : -1;
+            cat.style.transform = "scaleX(" + catFacing + ")";
+        }
+
+        var nextDelay = 2500 + Math.random() * 3000;
+        setTimeout(pickNewAction, nextDelay);
+    }
+
+    pickNewAction();
+
+    function walk() {
+        var boxWidth = box.clientWidth;
+        var catWidth = cat.offsetWidth;
+
+        if (currentAction === "walk") {
+            position += speed * direction;
+
+            if (position <= 0) {
+                direction = 1;
+            } else if (position + catWidth >= boxWidth) {
+                direction = -1;
+            }
+
+            walker.style.left = position + "px";
+            catFacing = direction === -1 ? 1 : -1;
+            cat.style.transform = "scaleX(" + catFacing + ")";
+        }
+
+        requestAnimationFrame(walk);
+    }
+
+    walk();
+</script>
